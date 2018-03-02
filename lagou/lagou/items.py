@@ -10,19 +10,20 @@ import scrapy
 
 class JobsItem(scrapy.Item):
     # define the fields for your item here like:
+    link_url = scrapy.Field()
+    job_tilte = scrapy.Field()
     job_name = scrapy.Field()
-    company_name = scrapy.Field()
-    salary = scrapy.Field()
+    job_salary = scrapy.Field()
     job_request = scrapy.Field()
     job_position = scrapy.Field()
     job_advantage = scrapy.Field()
     job_description = scrapy.Field()
-    job_address = scrapy.Field()
-
-
-class CompanyItem(scrapy.Item):
+    job_positionLng = scrapy.Field()
+    job_positionLat = scrapy.Field()
+    job_positionAddress = scrapy.Field()
+    job_workAddress = scrapy.Field()
     company_name = scrapy.Field()
-    domain = scrapy.Field()
-    stage = scrapy.Field()
-    scale = scrapy.Field()
-    home_page = scrapy.Field()
+    company_domain = scrapy.Field()
+    company_stage = scrapy.Field()
+    company_scale = scrapy.Field()
+    company_home_page = scrapy.Field()
